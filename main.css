@@ -10,28 +10,32 @@ body {
     background-color: bisque;
     display: flex;
     justify-content: center;
-
+    margin: auto;
 }
 
 .container {
     background-color: rgb(31, 174, 127);
     /* border: solid 2px black; */
+    /* display: flex;
+    flex-direction: column; */
     margin: 25%;
-    height: 250px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
 }
 
 #row1 #display-box {
-    border: solid 2px black;
-    width: 150px;
+    border: solid 1px rgb(255, 255, 255);
+    width: 75%;
     display: flex;
     justify-content: end;
     align-items: center;
+    padding-right: 10px;
+    ;
 }
 
 .button {
-    border: solid 1px black;
-    height: 50px;
+    border: solid 1px rgb(255, 255, 255);
+    height: 80px;
     width: 25%;
     display: flex;
     justify-content: center;
@@ -60,4 +64,8 @@ body {
 
 p {
     font-size: xx-large;
+}
+
+.button:hover {
+    background-color: aquamarine;
 }
