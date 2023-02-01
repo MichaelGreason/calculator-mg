@@ -21,6 +21,7 @@ body {
     margin: 25%;
     height: 400px;
     width: 300px;
+
 }
 
 #row1 #display-box {
@@ -43,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: x-large;
+    /* color: rgb(255, 255, 255); */
 }
 
 .operator {

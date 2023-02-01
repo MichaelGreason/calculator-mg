@@ -8,7 +8,7 @@ for (let button of inputs) {
     button.addEventListener('click', function (event) {
         console.log(event.target.innerText);
         displayValue += event.target.innerText;
-        output.innerText = displayValue;
+        outputDisplay.innerText = displayValue;
     }
     )
 }
@@ -18,18 +18,31 @@ let operatorInputs =
 for (let operator of operatorInputs) {
     operator.addEventListener('click', function (event) {
         console.log(event.target.innerText)
+        displayValue += event.target.innerText;
+        outputDisplay.innerText = displayValue
     }
     )
 }
 
-let equal =
+let multiply = document.querySelector("#multiply"); {
+    multiply.innerText = "x";
+
+}
+
+
+const equal =
     document.querySelector(".factor");
 equal.addEventListener('click', function (event) {
-    console.log(event.target.innerText)
+    // console.log(event.target.innerText)
+    // make clicking the equal button evaluate the expression and display the solution in the 
+    // display box
+    const answer = eval(outputDisplay.innerText)
+    console.log(answer)
+    outputDisplay.innerText = answer;
 }
 )
 
-let output =
+let outputDisplay =
     document.querySelector("#output");
 
 // const fullDisplay = []
@@ -50,20 +63,22 @@ let clear =
 clear.addEventListener('click', function (event) {
     console.log(event.target.innerText)
     displayValue = "";
-    output.innerText = displayValue;
+    outputDisplay.innerText = "0";
 }
 )
 
 
-// creating objects out of the input buttons
-const add =
-    document.querySelector("#add");
 
-const subtract =
-    document.querySelector("#subtract")
 
-const multiply =
-    document.querySelector("#multiply")
+// creating objects out of the operator buttons
+// const add =
+//     document.querySelector("#add");
 
-const divide =
-    document.querySelector("#divide")
+// const subtract =
+//     document.querySelector("#subtract")
+
+// const multiply =
+//     document.querySelector("#multiply")
+
+// const divide =
+//     document.querySelector("#divide")
