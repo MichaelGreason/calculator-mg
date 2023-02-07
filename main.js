@@ -34,11 +34,16 @@ equal.addEventListener('click', function (event) {
     const answer = eval(outputDisplay.innerText)
     console.log(answer)
     outputDisplay.innerText = answer;
+    displayValue = [answer];
 }
 )
 
 let outputDisplay =
     document.querySelector("#output");
+// function updateOutputDisplay() {
+//     let numTypeDN = Number(displayNum);
+//     if (Math.abs(numTypeDN) = numTypeDN.toLocaleString("en-US')"))
+//     }
 
 // const fullDisplay = []
 // for (let part of inputs) {
@@ -61,6 +66,7 @@ clear.addEventListener('click', function (event) {
     outputDisplay.innerText = "0";
 }
 )
+
 
 
 // creating objects out of the operator buttons
